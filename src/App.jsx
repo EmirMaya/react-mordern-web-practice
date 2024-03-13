@@ -11,19 +11,19 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import styles from "./style";
 
 const App = () => (
-  <div className="bg-slate-950 overflow-hidden w-full">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
+  <div className="overflow-hidden w-full bg-slate-100">
+    <div className={` ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth} bg-purple-100 w-full px-6 shadow-md fixed z-50 top-0`}>
         <Navbar />
       </div>
     </div>
 
-    <div className={`bg-purple-950 ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
+    <div className={`bg-slate-100 ${styles.marginY} ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth} mt-4`}>
         <Hero />
       </div>
     </div>
-    <div className={`bg-purple-950 ${styles.paddingX} ${styles.flexCenter}`}>
+    <div className={`bg-slate-100 ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Stats />
         <Business />

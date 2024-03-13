@@ -8,11 +8,11 @@ const GetStarted = () => {
       className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-gradient-to-r p-[2px] cursor-pointer`}
     >
       <div
-        className={`${styles.flexCenter} flex-col bg-primary w-full h-full rounded-full`}
+        className={`${styles.flexCenter} flex-col bg-purple-700 w-full h-full rounded-full hover:border-4 hover:border-emerald-400 `}
       >
         <div className={`${styles.flexStart} flex-row`}>
-          <p className="font-poppins font-medium text-[18px] leading-[23.4px]">
-            <span className="text-white">Get</span>
+          <p className="font-poppins font-medium text-[22px] leading-[23.4px]">
+            <span className="text-emerald-400">Get</span>
           </p>
           <img
             src={arrowUp}
@@ -20,8 +20,8 @@ const GetStarted = () => {
             className="w-[23px] h-[23px] object-contain"
           />
         </div>
-        <p className="font-poppins font-medium text-[18px] leading-[23.4px]">
-          <span className="text-sky-500">Started</span>
+        <p className="font-poppins font-medium text-[22px] leading-[23.4px]">
+          <span className="text-emerald-400 ">Started</span>
         </p>
       </div>
     </div>

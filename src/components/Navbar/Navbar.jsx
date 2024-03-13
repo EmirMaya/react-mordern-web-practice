@@ -13,8 +13,8 @@ export const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] 
-            ${active === nav.title ? "text-white" : "text-gray-300"}
+            className={`font-poppins font-normal cursor-pointer text-[18px] 
+            ${active === nav.title ? "text-purple-700" : "text-purple-950 hover:text-violet-500"}
             ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
@@ -23,7 +23,7 @@ export const Navbar = () => {
         ))}
       </ul>
 
-      <div className="sm:hidden flex flex-1 justify-end items-center">
+      <div className="sm:hidden flex flex-1 justify-end items-center ">
         <img
           src={toggle ? close : menu}
           alt="menu"
@@ -34,14 +34,14 @@ export const Navbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6 bg-gradient-to-b from-slate-950 absolute top-[70px] right-0 border-t border-sky-400  my-2 min-w-[140px] w-full rounded-b-xl sidebar`}
+          } p-6 bg-purple-100 absolute top-[70px] right-0 my-2 min-w-[140px] w-full rounded-b-xl sidebar border-t border-violet-600`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-white" : "text-gray-300"
+                  active === nav.title ? "text-purple-700" : "text-purple-950"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
