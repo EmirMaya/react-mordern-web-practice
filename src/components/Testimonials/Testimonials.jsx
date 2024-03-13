@@ -17,7 +17,7 @@ const Testimonials = () => (
       </h2>
       <div className="w-full md:mt-0 mt-6">
         <p
-          className={`${styles.paragraph} w-full text-purple-950 text-left md:text-center`}
+          className={`${styles.paragraphGray} w-full text-purple-950 text-left md:text-center`}
         >
           Everything you need to accept card payments and grow your business
           anywhere on the planet.

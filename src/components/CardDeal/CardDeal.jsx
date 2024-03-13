@@ -1,5 +1,5 @@
-import { card } from "../../assets"; 
-import styles,{layout} from "../../style"; 
+import { card } from "../../assets";
+import styles, { layout } from "../../style";
 import Button from "../Button/Button";
 
 const CardDeal = () => (
@@ -9,9 +9,11 @@ const CardDeal = () => (
         Find a better card deal <br className="sm:block hidden" /> in few easy
         steps.
       </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5 text-purple-950`}>
-        Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
-        aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+      <p
+        className={`${styles.paragraphGray} max-w-[470px] mt-5 text-purple-950`}
+      >
+        Unlock exclusive savings by finding the perfect card deal in just a few
+        simple steps. Maximize your benefits with ease!
       </p>
 
       <Button styles={`mt-10`} />

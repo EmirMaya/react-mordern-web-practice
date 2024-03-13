@@ -5,7 +5,7 @@ const styles = {
   paragraph:
     "font-poppins font-normal text-emerald-400 text-[18px] leading-[30.8px]",
     paragraphGray:
-    "font-poppins font-normal text-gray-700 text-[18px] leading-[30.8px]",
+    "font-poppins font-normal text-gray-700 text-[18px] leading-[30.8px] dark:text-gray-400",
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
   paddingX: "sm:px-16 px-6",

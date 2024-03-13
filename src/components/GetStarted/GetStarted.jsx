@@ -8,7 +8,7 @@ const GetStarted = () => {
       className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-gradient-to-r p-[2px] cursor-pointer`}
     >
       <div
-        className={`${styles.flexCenter} flex-col bg-purple-700 w-full h-full rounded-full hover:border-4 hover:border-emerald-400 `}
+        className={`${styles.flexCenter} flex-col bg-purple-700 w-full h-full rounded-full hover:border-4 hover:border-emerald-400 dark:bg-purple-900`}
       >
         <div className={`${styles.flexStart} flex-row`}>
           <p className="font-poppins font-medium text-[22px] leading-[23.4px]">

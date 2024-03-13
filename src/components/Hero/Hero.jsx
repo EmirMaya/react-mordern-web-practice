@@ -11,7 +11,7 @@ const Hero = () => {
       <div
         className={`flex-1 md:${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 md:mx-6`}
       >
-        <div className="flex flex-row items-center py-[6px] px-4  bg-purple-700 rounded-[10px] mb-2 shadow-lg ">
+        <div className="flex flex-row items-center py-[6px] px-4  bg-purple-700 rounded-[10px] mb-2 shadow-lg dark:bg-purple-900 ">
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
           <p className={`${styles.paragraph} font-semibold ml-2`}>
             <span className="text-white">20%</span> Discount for{" "}
@@ -42,9 +42,9 @@ const Hero = () => {
         <img src={robot} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
 
         {/* gradient start */}
-        <div className="absolute z-[0] w-[40%] h-[35%] top-0 rounded-full bg-gradient-to-b from-blue-100" />
-        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full  bg-gradient-to-b from-violet-700 bottom-40" />
-        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 rounded-full  bg-gradient-to-b from-violet-500" />
+        <div className="absolute z-[0] w-[40%] h-[35%] top-0 rounded-full bg-gradient-to-b from-violet-600 dark:from-emerald-100" />
+        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full  bg-gradient-to-b from-violet-700 bottom-40 dark:from-emerald-300" />
+        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 rounded-full  bg-gradient-to-b from-violet-500 dark:from-emerald-300" />
         {/* gradient end */}
       </div>
 
