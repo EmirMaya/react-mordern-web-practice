@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { close, logo, menu, moon } from "../../assets";
+import { close, logo, menu, moon, sun, menuCopy, closeCopy } from "../../assets";
 import { Link } from "react-router-dom";
 import { navLinks } from "../../constants/index.js";
 
@@ -50,15 +50,23 @@ export const Navbar = () => {
         ))}
         <button
           onClick={handleThemeSwitch}
-          className="ml-4 bg-purple-950 p-2 hover:bg-purple-800 rounded-full dark:bg-violet-300"
+          className="ml-4 bg-purple-950 p-2 hover:bg-purple-800 rounded-full dark:bg-violet-200"
         >
-          <img src={moon} alt="moon" />
+          <img src={theme === "dark" ? sun : moon} alt="moon" />
         </button>
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center ">
         <img
-          src={toggle ? close : menu}
+          src={
+            toggle
+              ? theme === "dark"
+                ? closeCopy
+                : close
+              : theme === "dark"
+              ? menuCopy
+              : menu
+          }
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
           onClick={() => setToggle(!toggle)}
@@ -67,26 +75,27 @@ export const Navbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6 bg-purple-100 absolute top-[70px] right-0 my-2 min-w-[140px] w-full rounded-b-xl sidebar border-t border-violet-600`}
+          } p-6 bg-purple-100 absolute top-[70px] right-0 my-2 min-w-[140px] w-full rounded-b-xl sidebar border-t border-violet-300 shadow-md  dark:bg-slate-950 dark:shadow-sm dark:shadow-violet-300`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (
               <li
-                
                 key={nav.id}
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-purple-700 dark:text-purple-400" : "text-purple-950 hover:text-violet-500 dark:text-purple-200 dark:hover:text-violet-500"
+                  active === nav.title
+                    ? "text-purple-700 dark:text-purple-400"
+                    : "text-purple-950 hover:text-violet-500 dark:text-purple-200 dark:hover:text-violet-500"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
-                <Link to={`#${nav.id}`}>{nav.title}</Link>
+                <Link href={`/#${nav.id}`}>{nav.title}</Link>
               </li>
             ))}
             <button
               onClick={handleThemeSwitch}
-              className="ml-4 bg-purple-950 p-2 hover:bg-purple-800 rounded-full dark:bg-violet-300"
+              className="mt-2 bg-purple-950 p-2 hover:bg-purple-800 rounded-full dark:bg-violet-200"
             >
-              <img src={moon} alt="moon" />
+              <img src={theme === "dark" ? sun : moon} alt="moon" />
             </button>
           </ul>
         </div>

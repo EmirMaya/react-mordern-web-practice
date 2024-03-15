@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-row justify-between items-center w-full sm:mb-0">
-          <h1 className="flex-1 font-poppins font-semibold sm:text-[72px] text-[52px] text-emerald-400 sm:leading-[100.8px] leading-[75px]">
+          <h1 className="flex-1 font-poppins font-semibold sm:text-[72px] text-[52px] text-teal-400 sm:leading-[100.8px] leading-[75px]">
             The Next <br className="sm:block hidden" />{" "}
             <span className="text-emrald-500">Generation</span>
           </h1>
@@ -42,9 +42,9 @@ const Hero = () => {
         <img src={robot} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
 
         {/* gradient start */}
-        <div className="absolute z-[0] w-[40%] h-[35%] top-0 rounded-full bg-gradient-to-b from-violet-600 dark:from-emerald-100" />
-        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full  bg-gradient-to-b from-violet-700 bottom-40 dark:from-emerald-300" />
-        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 rounded-full  bg-gradient-to-b from-violet-500 dark:from-emerald-300" />
+        <div className="absolute z-[0] w-[40%] h-[35%] top-0 rounded-full bg-gradient-to-b from-violet-600 dark:from-teal-100" />
+        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full  bg-gradient-to-b from-violet-700 bottom-40 dark:from-teal-300" />
+        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 rounded-full  bg-gradient-to-b from-violet-500 dark:from-teal-300" />
         {/* gradient end */}
       </div>
 

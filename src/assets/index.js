@@ -24,6 +24,9 @@ import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
 import moon from "./moon.svg";
+import sun from "./sun.svg";
+import menuCopy from "./menu-copy.svg";
+import closeCopy from "./close-copy.svg";
 
 export {
   airbnb,
@@ -52,4 +55,7 @@ export {
   people02,
   people03,
   moon,
+  sun,
+  menuCopy,
+  closeCopy,
 };

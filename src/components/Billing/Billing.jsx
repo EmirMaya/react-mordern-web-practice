@@ -3,8 +3,8 @@ import styles, { layout } from "../../style";
 
 const Billing = () => (
   <section id="product" className={`${layout.sectionReverse} relative`}>
-    <div className="absolute z-[0] w-3/5 h-3/5 -left-1/2 rounded-full emerald-gradient bottom-40" />
-    <div className="absolute z-[0] w-3/5 h-3/5 -right-1/2 rounded-full emerald-gradient bottom-40" />
+    <div className="absolute z-[0] w-3/5 h-3/5 -left-1/2 rounded-full teal-gradient bottom-40" />
+    <div className="absolute z-[0] w-3/5 h-3/5 -right-1/2 rounded-full teal-gradient bottom-40" />
     <div className={layout.sectionImgReverse}>
       <img src={bill} alt="billing" className="w-full h-full relative z-[5]" />
     </div>
